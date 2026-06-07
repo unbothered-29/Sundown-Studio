@@ -9,4 +9,12 @@ body {
     width: 100%;
     height: 100%;
     color: black;
+    background-color: #efeae3;
+    font-family: sun-roman;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
