@@ -18,3 +18,46 @@ body {
     width: 100%;
     position: relative;
 }
+
+nav {
+    padding: 2vw 3vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navright {
+    display: flex;
+    gap: 2vw;
+}
+
+#navright h4 {
+    padding: 10px 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.744);
+    font-size: 18px;
+    border: 1px solid rgba(110, 110, 110, 0.792);
+    border-radius: 50px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+#navright h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+
+#navright h4:hover::after {
+    bottom: 0;
+}
