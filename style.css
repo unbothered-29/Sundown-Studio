@@ -41,6 +41,8 @@ nav {
     border-radius: 50px;
     letter-spacing: -1px;
     position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
 }
 
 #navright h4::after {
@@ -48,16 +50,26 @@ nav {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: black;
-    
+    background-color: rgba(0, 0, 0, 0.756);
     color: white;
     position: absolute;
     left: 0;
     bottom: -100%;
     border-radius: 50px;
-    transition: all ease 0.3s;
+    transition: all ease 0.4s;
 }
 
 #navright h4:hover::after {
     bottom: 0;
+}
+
+#navright h4 a {
+    color: rgba(0, 0, 0, 0.756);
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+}
+
+#navright h4:hover a {
+    color: white;
 }
