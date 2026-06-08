@@ -19,9 +19,10 @@ body {
 }
 
 #page1 {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
+    padding: 0 2vw;
 }
 
 nav {
@@ -82,13 +83,24 @@ nav {
 #hero {
     height: 65vh;
     width: 100%;
-    background-color: aqua;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    border-bottom: 1 px solid black;
+    padding-bottom: 2.5vw;
 }
 
 #left h3 {
-    width: 30vw;
-    font-size: 2vw;
+
+    width: 25vw;
+    line-height: 2vw;
+    font-size: 1.8vw;
+}
+
+#right h1 {
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: 10vw;
+    line-height: 9vw;
+    text-align: right;
 }
