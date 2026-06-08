@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Neue Haas Grotesk Display";
-    src: url("./fonts/NeueHaasGrotText-55Roman-Trial.otf");
-}
-
 html,
 body {
     width: 100%;
@@ -16,6 +11,12 @@ body {
     color: black;
     background-color: #efeae3;
     font-family: "Neue Haas Grotesk Display";
+}
+
+
+@font-face {
+    font-family: "Neue Haas Grotesk Display";
+    src: url("./fonts/NeueHaasGrotText-55Roman-Trial.otf");
 }
 
 #page1 {
