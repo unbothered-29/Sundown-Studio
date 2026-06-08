@@ -134,7 +134,7 @@ nav {
 #h2 {
     height: 30vw;
     width: 30vw;
-    background-color: linear-gradient(#ff320a, #fe3f0a);
+    background: linear-gradient(#ff320a, #fe3f0a);
     border-radius: 50%;
     position: absolute;
     filter: blur(25px);
@@ -148,7 +148,7 @@ nav {
 #h3 {
     height: 30vw;
     width: 30vw;
-    background-color: linear-gradient(#ff320a, #fe3f0a);
+    background: linear-gradient(#ff320a, #fe3f0a);
     border-radius: 50%;
     filter: blur(25px);
     position: absolute;
@@ -183,24 +183,29 @@ nav {
     min-height: 100vh;
     width: 100%;
     position: relative;
+    padding: 8vw 0vw;
+}
+
+#moving::-webkit-scrollbar {
+    display: none;
 }
 
 #moving {
-    /* background-color: blue; */
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .con {
     white-space: nowrap;
     display: inline-block;
-}
-
-#moving {
-    white-space: nowrap;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 #moving h1 {
     font-size: 8vw;
-    background-color: aqua;
     display: inline-block;
 }
 
@@ -210,4 +215,15 @@ nav {
     background-color: #fe3f0a;
     display: inline-block;
     border-radius: 50%;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
