@@ -86,7 +86,7 @@ nav {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    border-bottom: 1 px solid black;
+    border-bottom: 1px solid black;
     padding-bottom: 2.5vw;
 }
 
@@ -103,4 +103,10 @@ nav {
     font-size: 10vw;
     line-height: 9vw;
     text-align: right;
+}
+
+#page1 video {
+    margin-top: 4vw;
+    border-radius: 30px;
+    width: 100%;
 }
