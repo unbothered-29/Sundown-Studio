@@ -382,3 +382,62 @@ nav {
     background-size: cover;
     background-position: center;
 }
+
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 4vw 2vw;
+}
+
+#design {
+    height: 110vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: #efeae3;
+    border-radius: 20px;
+}
+
+#design #dl {
+    width: 25%;
+    margin: 12vw 9vw;
+    align-items: center;
+}
+
+#dl h2 {
+    font-size: 4.5vw;
+    border-left: 2px solid #504a45;
+}
+
+#dl h2:nth-child(3) {
+    padding-left: 15px;
+    color: #504a45;
+}
+
+#dl h2:nth-child(4) {
+    padding-left: 15px;
+    color: #504a45;
+}
+
+#dl h2:hover {
+    cursor: pointer;
+}
+
+#dl p {
+    margin-top: 20px;
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+#design #dr {
+    width: 70%;
+}
+
+#dr img {
+    height: 110vh;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}

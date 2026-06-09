@@ -25,3 +25,27 @@ elems.forEach(function (e) {
         fixed.style.backgroundImage = `url(${image})`
     })
 })
+
+const h2s = document.querySelectorAll(".text")
+const pg4img = document.querySelector("#dr img")
+const p = document.querySelector("#paragraph")
+
+h2s.forEach(function (h2) {
+    h2.addEventListener("click", function () {
+
+        h2s.forEach(function (b) {
+            b.style.color = "#504a45";
+            b.style.paddingLeft = "15px";
+        })
+
+        console.log(this.textContent);
+        this.style.color = "#efeae3";
+        this.style.paddingLeft = "0px";
+
+        const img = this.getAttribute("data-image");
+        pg4img.src = img;
+
+        const para = this.getAttribute("data-para");
+        p.textContent = para;
+    });
+});
