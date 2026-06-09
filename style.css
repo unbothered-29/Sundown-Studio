@@ -18,21 +18,22 @@ body {
     z-index: 1;
 }
 
-
 @font-face {
     font-family: "Neue Haas Grotesk Display";
-    src: url("./fonts/NeueHaasGrotDispRound-75Bold-Trial.otf");
+    src: url("./fonts/NeueHaasGrotDisp-35Thin-Trial.otf");
+    font-weight: 300;
 }
 
 @font-face {
     font-family: "Neue Haas Grotesk Display";
     src: url("./fonts/NeueHaasGrotText-55Roman-Trial.otf");
+    font-weight: 400;
 }
-
 
 @font-face {
     font-family: "Neue Haas Grotesk Display";
-    src: url("./fonts/NeueHaasGrotDisp-35Thin-Trial.otf");
+    src: url("./fonts/NeueHaasGrotDispRound-75Bold-Trial.otf");
+    font-weight: 700;
 }
 
 
@@ -59,7 +60,7 @@ nav {
 
 #navright h4 {
     padding: 10px 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgba(0, 0, 0, 0.744);
     font-size: 18px;
     border: 1px solid rgba(0, 0, 0, 0.443);
@@ -278,7 +279,7 @@ nav {
 
 #project h5 {
     font-size: 1.1vw;
-    font-weight: 200;
+    font-weight: 600;
 }
 
 #bottom-pt2 img {
@@ -359,13 +360,13 @@ nav {
 }
 
 .rite h3 {
-    font-weight: 100;
+    font-weight: 500;
     font-size: 1.3vw;
     text-decoration: uppercase;
 }
 
 .rite h4 {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.2vw;
     color: rgb(152, 152, 152);
 }
@@ -415,12 +416,12 @@ nav {
     border-left: 2px solid #504a45;
 }
 
-#dl h2:nth-child(3) {
+#dl h2:nth-child(2) {
     padding-left: 15px;
     color: #504a45;
 }
 
-#dl h2:nth-child(4) {
+#dl h2:nth-child(3) {
     padding-left: 15px;
     color: #504a45;
 }
@@ -432,7 +433,8 @@ nav {
 #dl p {
     margin-top: 20px;
     font-size: 1vw;
-    font-weight: 100;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 #design #dr {
@@ -474,9 +476,9 @@ nav {
 }
 
 #footer h1 {
-    font-size: 26.5vw;
+    font-size: 23vw;
     color: #efeae3;
-    font-weight: bolder;
+    font-weight: 600;
     line-height: 1;
     z-index: 1;
 }
