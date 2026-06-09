@@ -494,21 +494,20 @@ nav {
 }
 
 #footer-bottom {
-    border-top: 1px solid #dadada;
+    border-top: 1px solid #dadada51;
     height: 10vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4vw;
+    padding: 1vw 1vw;
     z-index: 1;
-
 }
 
 #footer-bottom h5 {
     color: #efeae3;
-    font-weight: 200;
-    font-size: 1.5vw;
+    font-weight: 300;
+    font-size: 1.2vw;
     z-index: 1;
     letter-spacing: 1px;
 }
@@ -518,7 +517,6 @@ nav {
     margin-left: 20px;
     margin-bottom: 33px;
     z-index: 1;
-
 }
 
 #work h3 {
@@ -530,15 +528,18 @@ nav {
     z-index: 1;
 }
 
+#email {
+    margin-top: -40px;
+}
+
 #email h4 {
     color: #efeae3;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.2vw;
     margin-bottom: 2vw;
     padding-right: 100px;
-    letter-spacing: 1px;
+    letter-spacing: px;
     z-index: 1;
-
 }
 
 #email input {
@@ -547,17 +548,16 @@ nav {
     border-left: none;
     border-top: none;
     background: transparent;
-    color: #efeae3;
-    padding: 8px 8px;
-    font-size: 1vw;
-    width: 72%;
+    padding: 8px 3px;
+    width: 80%;
     padding-right: 100px;
     z-index: 1;
 }
 
 #email ::placeholder {
-    color: #efeae3;
-
+    color: #efeae39b;
+    font-size: 1.15vw;
+    text-align: start;
 }
 
 #footer #gooey1 {
@@ -593,7 +593,7 @@ nav {
     right: -20%;
     filter: blur(50px);
     z-index: 0;
-    animation: goy 10s ease-in-out infinite alternate;
+    animation: goy 5s ease-in-out infinite alternate;
 }
 
 @keyframes goy {
