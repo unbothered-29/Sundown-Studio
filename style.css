@@ -250,8 +250,28 @@ nav {
 
 #bottom-pt2 {
     width: 20%;
-
+    margin-top: 30vh;
     /* background-color: blue; */
+}
+
+#dot {
+    height: 8px;
+    width: 8px;
+    background-color: #fe3f0a;
+    border-radius: 50%;
+}
+
+#project {
+    display: flex;
+    gap: 5px;
+    padding-left: 2.3vw;
+    padding-top: 10vw;
+    align-items: center;
+}
+
+#project h5 {
+    font-size: 1.1vw;
+    font-weight: 200;
 }
 
 #bottom-pt2 img {
