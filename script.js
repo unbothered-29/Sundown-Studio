@@ -92,26 +92,29 @@ function menu() {
         if (flag === 0) {
             full.style.top = "0"
             navimg.style.opacity = "0"
-            menuIcon.className = "ri-close-line"  
+            menuIcon.className = "ri-close-line"
             menuText.textContent = "CLOSE"
             flag = 1
         } else {
             full.style.top = "-100%"
             navimg.style.opacity = "1"
-            menuIcon.className = "ri-menu-line"  
+            menuIcon.className = "ri-menu-line"
             menuText.textContent = "MENU"
             flag = 0
         }
     })
 }
 
+function loader() {
+    var loader = document.querySelector("#loader")
+    setTimeout(function () {
+        loader.style.top = "-100%"
+    }, 4000)
+}
+
 elem()
 text()
 swiper()
 menu()
+loader()
 
-
-var loader = document.querySelector("#loader")
-setTimeout(function () {
-    loader.style.top = "-100%"
-}, 4000)
