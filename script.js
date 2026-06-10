@@ -1,51 +1,66 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('#main'),
+//     smooth: true
+// });
 
 // var a = document.querySelector("#elem1");
 // var image = a.getAttribute("data-image")
 // console.log(image)
 
+function elem() {
 
-var elemC = document.querySelector("#elem-container")
-var fixed = document.querySelector("#fixed-img")
-elemC.addEventListener("mouseenter", function () {
-    fixed.style.display = "block"
-})
-
-elemC.addEventListener("mouseleave", function () {
-    fixed.style.display = "none"
-})
-
-var elems = document.querySelectorAll(".elem")
-elems.forEach(function (e) {
-    e.addEventListener("mouseenter", function () {
-        var image = e.getAttribute("data-image")
-        fixed.style.backgroundImage = `url(${image})`
+    var elemC = document.querySelector("#elem-container")
+    var fixed = document.querySelector("#fixed-img")
+    elemC.addEventListener("mouseenter", function () {
+        fixed.style.display = "block"
     })
-})
 
-const h2s = document.querySelectorAll(".text")
-const pg4img = document.querySelector("#dr img")
-const p = document.querySelector("#paragraph")
+    elemC.addEventListener("mouseleave", function () {
+        fixed.style.display = "none"
+    })
 
-h2s.forEach(function (h2) {
-    h2.addEventListener("click", function () {
-
-        h2s.forEach(function (b) {
-            b.style.color = "#504a45";
-            b.style.paddingLeft = "15px";
+    var elems = document.querySelectorAll(".elem")
+    elems.forEach(function (e) {
+        e.addEventListener("mouseenter", function () {
+            var image = e.getAttribute("data-image")
+            fixed.style.backgroundImage = `url(${image})`
         })
+    })
+}
 
-        console.log(this.textContent);
-        this.style.color = "#efeae3";
-        this.style.paddingLeft = "0px";
+function text() {
+    const h2s = document.querySelectorAll(".text")
+    const pg4img = document.querySelector("#dr img")
+    const p = document.querySelector("#paragraph")
 
-        const img = this.getAttribute("data-image");
-        pg4img.src = img;
+    h2s.forEach(function (h2) {
+        h2.addEventListener("click", function () {
 
-        const para = this.getAttribute("data-para");
-        p.textContent = para;
+            h2s.forEach(function (b) {
+                b.style.color = "#504a45";
+                b.style.paddingLeft = "15px";
+            })
+
+            console.log(this.textContent);
+            this.style.color = "#efeae3";
+            this.style.paddingLeft = "0px";
+
+            const img = this.getAttribute("data-image");
+            pg4img.src = img;
+
+            const para = this.getAttribute("data-para");
+            p.textContent = para;
+        });
     });
-});
+}
+
+function swiper() {
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween:50,
+    });
+}
+
+elem()
+text()
+swiper()
