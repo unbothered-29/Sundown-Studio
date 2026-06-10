@@ -6,7 +6,9 @@ A pixel-perfect frontend clone of the [Sundown Studio](https://www.sundown-studi
 
 ## Live Preview
 
-> Open `index.html` in a browser. For best results, use a local server (e.g. VS Code Live Server) to ensure fonts and video load correctly.
+🔗 **[https://sundown-studio-unbothered.vercel.app/](https://sundown-studio-unbothered.vercel.app/)**
+
+Deployed on [Vercel](https://vercel.com/). To run locally, open `index.html` with a local server (e.g. VS Code Live Server) to ensure fonts and video load correctly.
 
 ---
 
@@ -171,7 +173,23 @@ h2s.forEach(function (h2) {
 - The custom fonts are trial versions and are loaded locally — ensure the `fonts/` folder is present
 - The hero video (`video.mp4`) must be present in the root directory for Page 1 to render correctly
 - Locomotive Scroll wraps `#main` but the footer sits outside it — scroll depth is managed manually via `#page6`'s height
-- The site is desktop-optimized; responsive/mobile breakpoints are not implemented
+- The site is desktop-optimized; responsive/mobile breakpoints are not implemented in this version — best viewed at 1280px width and above
+
+---
+
+## Deployment
+
+The project is deployed on **Vercel** via direct GitHub repository import.
+
+- No build step required — it is a static site (plain HTML, CSS, JS)
+- Vercel serves `index.html` as the entry point automatically
+- Font files and video are included in the repo and served as static assets
+- Live URL: [https://sundown-studio-unbothered.vercel.app/](https://sundown-studio-unbothered.vercel.app/)
+
+To deploy your own copy:
+1. Push the project to a GitHub repository
+2. Import the repository at [vercel.com/new](https://vercel.com/new)
+3. Leave all build settings as default and click Deploy
 
 ---
 
