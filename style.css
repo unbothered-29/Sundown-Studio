@@ -278,8 +278,8 @@ nav {
 }
 
 #project h5 {
-    font-size: 1.1vw;
-    font-weight: 600;
+    font-size: 1.2vw;
+    font-weight: 400;
 }
 
 #bottom-pt2 img {
@@ -496,13 +496,17 @@ nav {
     min-height: 80vh;
     width: 100%;
     background-color: #efeae3;
-    padding: 10vw 4vw;
+    padding: 5vw 0;
+    padding-left: 5.5vw;
 }
 
 #page5 #project {
-    height: 0px;
-    width: 20%;
-    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 5vw;
 }
 
 .swiper {
@@ -513,7 +517,7 @@ nav {
 .swiper-slide {
     text-align: left;
     width: 25%;
-    border-left: 1px solid rgba(0, 0, 0, 0.372);
+    border-left: 1px solid rgba(0, 0, 0, 0.146);
     padding: 0 2vw;
 }
 
