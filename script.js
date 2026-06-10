@@ -114,4 +114,4 @@ menu()
 var loader = document.querySelector("#loader")
 setTimeout(function () {
     loader.style.top = "-100%"
-}, 3000)
+}, 4000)
