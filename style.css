@@ -41,8 +41,10 @@ body {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    padding: 0 2vw;
+    padding: 0vw 2vw;
     background-color: #efeae3;
+    padding-bottom: 6vw;
+    overflow: hidden;
 }
 
 nav {
@@ -113,7 +115,8 @@ nav {
     align-items: flex-end;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    padding-bottom: 2.5vw;
+    padding-bottom: 1.5vw;
+    margin-top: 3vw;
 }
 
 #left h3 {
@@ -131,7 +134,7 @@ nav {
 }
 
 #page1 video {
-    margin-top: 4vw;
+    margin-top: 10vw;
     border-radius: 30px;
     width: 100%;
     position: relative;
@@ -142,7 +145,7 @@ nav {
     height: 36vw;
     width: 56vw;
     right: 0;
-    top: 70vh;
+    top: 78vh;
 }
 
 #h1 {
@@ -701,12 +704,13 @@ nav {
 #full-scr {
     height: 100vh;
     width: 100%;
-    background-color: #00000071;
     position: fixed;
-    z-index: 999;
+    z-index: 9998;
     left: 0;
     top: -100%;
     transition: all ease 0.5s;
+    background-color: transparent;
+    background-color: #00000071;
 }
 
 #f1 {
@@ -715,7 +719,40 @@ nav {
     background-color: #efeae3;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 8vw 6vw;
+    gap: 1vw;
+}
 
+#f1 h2 {
+    font-size: 16vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: right;
+}
+
+#loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #000000;
+    z-index: 99999;
+    top: 0;
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1 {
+    font-size: 4vw;
+    background: linear-gradient(to right, #ff9831, #ff350b);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 @media (max-width:600px) {
@@ -726,9 +763,10 @@ nav {
 
     #page1 {
         min-height: 100vh;
-        width: 100vw;
+        width: 100%;
         padding: 0 0vw;
         position: relative;
+        padding-bottom: 10vw;
     }
 
     nav {
@@ -797,10 +835,10 @@ nav {
 
     #hero-shape {
         position: absolute;
-        height: 82vw;
-        width: 56vw;
+        height: 62vw;
+        width: 60vw;
         right: 0;
-        top: 40vh;
+        top: 55vh;
     }
 
     #page2 {
@@ -876,184 +914,118 @@ nav {
     }
 
     #page3 {
-        min-height: 100vh;
-        width: 100%;
-        background-color: #efeae3;
-        padding: 4vw 0;
+        padding: 4vw;
     }
 
     #page3 img {
-        display: block;
+        display: block !important;
     }
 
     .elem {
-        height: 120px;
-        width: 100%;
-        /* border-top: 1px solid black; */
-        border-bottom: 1px solid rgba(0, 0, 0, 0.336);
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        align-items: center;
-        padding: 0vw 3vw;
-        justify-content: space-between;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+        border-bottom: none;
+        margin-bottom: 10vw;
+        overflow: visible;
+        background: transparent;
     }
 
-    .elem h2 {
-        font-size: 3vw;
-        position: relative;
-        z-index: 9;
+    .elem img {
+        width: 100%;
+        height: 65vw;
+        object-fit: cover;
+        border-radius: 15px;
+        display: block !important;
+        margin-bottom: 3vw;
     }
 
     .elem .overlay {
-        height: 100%;
-        width: 100%;
-        background-color: #ff9831;
-        position: absolute;
-        left: 0;
-        top: -100%;
-        transition: all ease 0.2s;
+        display: none;
+    }
+
+    .elem h2 {
+        font-size: 8vw;
+        font-weight: 700;
+        padding: 0;
+        margin-bottom: 1vw;
+        z-index: 1;
+        line-height: 1.1;
     }
 
     .rite {
-        text-align: right;
-        position: relative;
+        text-align: left;
+        padding: 0;
     }
 
     .rite h3 {
+        font-size: 4.5vw;
         font-weight: 500;
-        font-size: 1.3vw;
-        text-decoration: uppercase;
+        margin-bottom: 1vw;
     }
 
     .rite h4 {
+        font-size: 4vw;
         font-weight: 400;
-        font-size: 1.2vw;
         color: rgb(152, 152, 152);
     }
 
-    .elem:hover .overlay {
-        top: 0;
+    #fixed-img {
+        display: none !important;
     }
 
     #page3 h5 {
-        padding: 10px 20px;
-        font-weight: 600;
-        color: rgba(0, 0, 0, 0.744);
-        font-size: 17px;
-        border: 1px solid rgba(0, 0, 0, 0.443);
-        border-radius: 50px;
-        letter-spacing: -0.5px;
-        position: relative;
-        transition: all ease 0.4s;
-        overflow: hidden;
-        width: 11.4%;
-        text-align: center;
-        margin: 50px 40px;
-    }
-
-    #page3 h5::after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.756);
-        color: #efeae3;
-        position: absolute;
-        left: 0;
-        bottom: -100%;
-        border-radius: 50px;
-        transition: all ease 0.4s;
-    }
-
-    #page3 h5:hover::after {
-        bottom: 0;
-    }
-
-    #page3 h5 a {
-        color: rgba(0, 0, 0, 0.756);
-        text-decoration: none;
-        z-index: 9;
-        position: relative;
-    }
-
-    #fixed-img {
-        height: 30vw;
-        width: 24vw;
-        border-radius: 10px;
-        position: fixed;
-        z-index: 999;
-        left: 50%;
-        top: 25%;
-        display: none;
-        background-size: cover;
-        background-position: center;
+        width: 50%;
+        font-size: 3.5vw;
+        margin: 5vw 0;
+        padding: 3vw 4vw;
     }
 
     #page4 {
-        min-height: 100vh;
-        width: 100%;
-        background-color: #efeae3;
-        padding: 4vw 2vw;
+        min-height: auto;
+        padding: 4vw 3vw;
     }
 
     #design {
-        height: 110vh;
-        width: 100%;
-        display: flex;
-        background-color: black;
-        color: #efeae3;
-        border-radius: 20px;
+        height: auto;
+        flex-direction: column;
+        border-radius: 15px;
+        overflow: hidden;
     }
 
     #design #dl {
-        width: 25%;
-        margin: 12vw 9vw;
+        width: 100%;
+        margin: 10vw 6vw;
     }
 
     #dl h2 {
-        font-size: 4.5vw;
-        border-left: 2px solid #504a45;
-    }
-
-    #dl h2:nth-child(2) {
-        padding-left: 15px;
-        color: #504a45;
-    }
-
-    #dl h2:nth-child(3) {
-        padding-left: 15px;
-        color: #504a45;
-    }
-
-    #dl h2:hover {
-        cursor: pointer;
+        font-size: 10vw;
     }
 
     #dl p {
-        margin-top: 20px;
-        font-size: 1vw;
-        font-weight: 300;
-        letter-spacing: 1px;
+        font-size: 3.5vw;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        width: 85%;
     }
 
     #design #dr {
-        width: 70%;
+        width: 100%;
+        height: 60vh;
     }
 
     #dr img {
-        height: 110vh;
+        height: 60vh;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 0 0 15px 15px;
         object-fit: cover;
     }
 
     #page5 {
         height: auto;
         min-height: 80vh;
-        width: 100%;
-        background-color: #efeae3;
-
     }
 
     #page5 #project {
@@ -1090,12 +1062,12 @@ nav {
     }
 
     #page6 {
-        min-height: 50vh;
+        min-height: 45vh;
         width: 100%;
     }
 
     #footer {
-        height: 50vh;
+        height: 45vh;
         display: flex;
         flex-direction: column;
     }
@@ -1153,14 +1125,14 @@ nav {
     #footer #gooey1 {
         height: 85vw;
         width: 130vw;
-        top: -40%;
-        left: -50%;
+        top: -45%;
+        left: -55%;
     }
 
     #footer #gooey2 {
         height: 85vw;
         width: 130vw;
-        top: -40%;
-        right: -50%;
+        top: -45%;
+        right: -55%;
     }
 }

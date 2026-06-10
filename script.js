@@ -11,6 +11,25 @@ function elem() {
 
     var elemC = document.querySelector("#elem-container")
     var fixed = document.querySelector("#fixed-img")
+
+    if (window.innerWidth <= 600) return;
+
+    elemC.addEventListener("mouseenter", function () {
+        fixed.style.display = "block"
+    })
+
+    elemC.addEventListener("mouseleave", function () {
+        fixed.style.display = "none"
+    })
+
+    var elems = document.querySelectorAll(".elem")
+    elems.forEach(function (e) {
+        e.addEventListener("mouseenter", function () {
+            var image = e.getAttribute("data-image")
+            fixed.style.backgroundImage = `url(${image})`
+        })
+    })
+
     elemC.addEventListener("mouseenter", function () {
         fixed.style.display = "block"
     })
@@ -61,24 +80,38 @@ function swiper() {
     });
 }
 
-var menu = document.querySelector("nav h3")
-var full = document.querySelector("#full-scr")
-var navimg = document.querySelector("nav img")
-var flag = 0
-menu.addEventListener("click", function () {
-    if (flag === 0) {
-        full.style.top = 0
-        navimg.style.opacity = 0
-        flag = 1
-    }
-    else {
-        full.style.top = "-100%"
-        navimg.style.opacity = 1
-        flag = 0
-    }
+function menu() {
+    var menu = document.querySelector(".menu")
+    var menuText = document.querySelector("nav h3")
+    var full = document.querySelector("#full-scr")
+    var navimg = document.querySelector("nav img")
+    var menuIcon = document.querySelector(".menu i")
+    var flag = 0
 
-})
+    menu.addEventListener("click", function () {
+        if (flag === 0) {
+            full.style.top = "0"
+            navimg.style.opacity = "0"
+            menuIcon.className = "ri-close-line"   // X icon
+            menuText.textContent = "CLOSE"
+            flag = 1
+        } else {
+            full.style.top = "-100%"
+            navimg.style.opacity = "1"
+            menuIcon.className = "ri-menu-line"    // hamburger icon
+            menuText.textContent = "MENU"
+            flag = 0
+        }
+    })
+}
 
 elem()
 text()
 swiper()
+menu()
+
+
+var loader = document.querySelector("#loader")
+setTimeout(function () {
+    loader.style.top = "-100%"
+}, 3000)
