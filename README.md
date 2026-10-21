@@ -1,6 +1,6 @@
 ﻿# Sundown Studio — Frontend Clone
 
-A pixel-perfect frontend clone of the [Sundown Studio](https://www.sundown-studio.com/) website, built with vanilla HTML, CSS, and JavaScript. The project replicates the studio's multi-page layout, smooth scroll animations, interactive elements, and typographic design system.
+A pixel-perfect frontend clone of the [Sundown Studio](https://www.sundown-studio.com/) website, built with vanilla HTML, CSS, and JavaScript. The project replicates the studio's multi-page layout, smooth scroll animations, interactive elements, and typographic design system
 
 ---
 
